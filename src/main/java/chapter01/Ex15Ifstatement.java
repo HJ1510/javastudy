@@ -5,7 +5,7 @@ public class Ex15Ifstatement {
 	public static void main(String[] args) {
 		// Q2: 최대값을 판별하는 조건을 완성해 보세요.
 		int a1 = 20;
-		int a2 = 1000;
+		int a2 = 100;
 		int a3 = 50;
 		
 //		if (a1 >= a2 && a1 >= a3) {
