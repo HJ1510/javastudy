@@ -3,7 +3,7 @@
 	<groupId>com.bitacademy</groupId>
 	<artifactId>javastudy</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -12,8 +12,7 @@
 		<maven.compiler.target>12</maven.compiler.target>
 	</properties>
 
-	<build>
-		<finalName>javastudy</finalName>
-	</build>
-
+	<modules>
+		<module>chapter01</module>
+	</modules>
 </project>
