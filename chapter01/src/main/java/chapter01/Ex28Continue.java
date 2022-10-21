@@ -8,7 +8,7 @@ public class Ex28Continue {
 		// whileTest();
 	}
 	
-	static void forTest() {
+	public static void forTest() {
 		for(int i = 0; i < 10; i++) {
 			if( i % 2 != 0) {
 				continue;
@@ -17,7 +17,7 @@ public class Ex28Continue {
 		}
 	}
 
-	static void whileTest() {
+	static void whileTest() {  // public은 생략 가능
 		int i = 0;
 		while(i < 10) {
 			if(i % 2 != 0) {
