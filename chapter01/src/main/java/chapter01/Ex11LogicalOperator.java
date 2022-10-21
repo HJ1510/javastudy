@@ -20,7 +20,7 @@ public class Ex11LogicalOperator {
 		// false || true => true
 		// false || false => false
 		// true || true => true		
-		System.out.println(3 != 2 || -1 > 0); // true
+//		System.out.println(3 != 2 || -1 > 0); // true
 		
 		// ^ (xor, 배타적 논리합)
 		// true ^ false => true

@@ -21,7 +21,12 @@ public class Ex03Typecast {
 		
 		// 데이터의 의미가 다르면 캐스팅 자체가 안된다.
 		// boolean b = (boolean)i1;
-		
+		System.out.println(i2);
+		System.out.println(f2);
+		System.out.println(i3);
+		System.out.println(l2);
+		System.out.println(d2);
+		System.out.println(d3);
 	}
 
 }

@@ -7,8 +7,8 @@
   </parent>
   <artifactId>practice02</artifactId>
   
-    <build>
+   <build>
 	<finalName>chapter02</finalName>
-  </build>
+   </build>
 
 </project>
