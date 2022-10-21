@@ -13,12 +13,14 @@ public class Prob3 {
 		while(true) {
 			if(num % 2 == 1) { //홀수일때
 				sum=sum+num;
+				System.out.println(sum);
 				break;
 			} else if(num % 2 == 0) { //짝수일때
 				sum=sum+num;
 				System.out.println(sum);
 				break;
 			}
+			num++;
 			
 			
 		}	
