@@ -16,6 +16,15 @@ public class Prob05 {
 			Random random = new Random();
 			int correctNumber = random.nextInt( 100 ) + 1;
 			System.out.println(correctNumber);
+			System.out.println("수를 결정 하였습니다.: "+correctNumber);
+			
+			while(true) {
+				System.out.println(">>");
+				int answer = scanner.nextInt();
+				if(answer == correctNumber) {
+					break;
+				}
+			}
 
 			
 			//새 게임 여부 확인하기
