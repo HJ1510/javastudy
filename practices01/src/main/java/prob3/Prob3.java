@@ -9,7 +9,6 @@ public class Prob3 {
 		Scanner scanner = new Scanner(System.in);
 		int num = scanner.nextInt();
 		int sum = 0;
-		int sum2 = 0;
 
 		if (num % 2 == 0) { // num 짝수일때
 			for (int i = 0; i <= num; i++) {
