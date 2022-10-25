@@ -2,17 +2,15 @@ package chapter03;
 
 //정보은닉
 public class Goods {
-	public static int countOfGoods = 0; 
-	
+	public static int countOfGoods = 0;
+
 	private String name;
 	private int price;
 	private int countStock;
 	private int countSold;
-	
-	
-	
+
 	public Goods() {
-		countOfGoods++;  // Goods.countOfGoods++;=> 같은 클래스 안에서 Goods.생략가능
+		countOfGoods++; // Goods.countOfGoods++;=> 같은 클래스 안에서 Goods.생략가능
 	}
 
 	public String getName() {
@@ -50,11 +48,19 @@ public class Goods {
 		this.countSold = countSold;
 	}
 
-	public String toString() {
-		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold
-				+ "]";
+//	public String toString() {
+//		return "Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold=" + countSold
+//				+ "]";
+//	}
+
+	public void showInfo() {
+		System.out.println("Goods [name=" + name + ", price=" + price + ", countStock=" + countStock + ", countSold="
+				+ countSold + "]");
 	}
-	
+
+	public int calcDiscountPrice(double discountRate) {
+		return (int)(price * discountRate);
+	}
 
 //	public void setName(String name) {
 //	this.name = name; //this는 runtime때 실행중인 객체를 내부에서 접근할때 필요
