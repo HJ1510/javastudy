@@ -17,7 +17,6 @@ public class GoodsApp {
 		Goods g3 = new Goods();
 		
 		System.out.println(Goods.countOfGoods);
-		
 		System.out.println(g1);
 	}
 
