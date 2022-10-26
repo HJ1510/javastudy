@@ -12,9 +12,20 @@ public class Main {
 		drawPoint(pt);
 		//pt.disappear();
 		pt.show(false);
+		
+		ColorPoint pt2 = new ColorPoint();
+		pt2.setX(100);
+		pt2.setY(200);
+		pt2.setColor("red");
+		
+		drawColorPoint(pt2);
 	}
 	
 	public static void drawPoint(Point pt) {
+		pt.show();
+	}
+	
+	public static void drawColorPoint(ColorPoint pt) {
 		pt.show();
 	}
 

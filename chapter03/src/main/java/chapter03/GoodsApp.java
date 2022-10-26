@@ -29,6 +29,8 @@ public class GoodsApp {
 		Goods g4 = new Goods("TV", 10000, 10, 0);
 		g4.showInfo();
 		System.out.println("instance count: " + Goods.countOfGoods);
+		
+		System.out.println(g4.toString());
 	}
 
 }
