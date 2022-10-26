@@ -10,7 +10,7 @@ public class SwapTest02 {
 //		int temp = a;
 //		a = b;
 //		b = temp;
-		swap(a, b); // call by value vs. call by reference
+		swap(a, b); // "call by value" vs. call by reference =stack에 쌓이는 인스턴스는 변경 x
 		System.out.println(a + ":" + b);
 	}
 
