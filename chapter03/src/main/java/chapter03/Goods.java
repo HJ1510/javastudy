@@ -13,6 +13,17 @@ public class Goods {
 		countOfGoods++; // Goods.countOfGoods++;=> 같은 클래스 안에서 Goods.생략가능
 	}
 
+	// 생성자
+	public Goods(String name, int price, int countStock, int countSold) {
+		this(); // countOfGoods++; 불러옴
+		this.name = name;
+		this.price = price;
+		this.countStock = countStock;
+		this.countSold = countSold;
+
+//		countOfGoods++;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -59,7 +70,7 @@ public class Goods {
 	}
 
 	public int calcDiscountPrice(double discountRate) {
-		return (int)(price * discountRate);
+		return (int) (price * discountRate);
 	}
 
 //	public void setName(String name) {
