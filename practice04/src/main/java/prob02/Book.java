@@ -46,6 +46,15 @@ public class Book {
 		this.author = author;
 	}
 	
+	
+	public int getStateCode() {
+		return stateCode;
+	}
+
+	public void setStateCode(int stateCode) {
+		this.stateCode = stateCode;
+	}
+
 	public void rent() {
 		stateCode=1;
 		System.out.println(title+"이(가) 대여 됐습니다.");
