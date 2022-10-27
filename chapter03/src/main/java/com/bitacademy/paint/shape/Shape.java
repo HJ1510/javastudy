@@ -1,4 +1,6 @@
-package paint;
+package com.bitacademy.paint.shape;
+
+import com.bitacademy.paint.i.Drawable;
 
 public abstract class Shape implements Drawable {  // 추상메소드가 하나라도 있으면 추상 클래스 추상클래스는 객체구현 불가능
 	private String lineColor;                      // Drawable에 있는 draw(); 상속

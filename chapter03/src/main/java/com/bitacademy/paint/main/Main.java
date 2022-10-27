@@ -1,9 +1,23 @@
-package paint;
+package com.bitacademy.paint.main;
+
+import com.bitacademy.paint.i.Drawable;
+import com.bitacademy.paint.point.ColorPoint;
+import com.bitacademy.paint.point.Point;
+import com.bitacademy.paint.shape.Circle;
+import com.bitacademy.paint.shape.Rectangle;
+import com.bitacademy.paint.shape.Shape;
+import com.bitacademy.paint.shape.Triangle;
+import com.bitacademy.paint.text.GraphicText;
+
+//import java.util.ArrayList; // java.util.=> 패키지 이름 ArrayList=>클래스 이름
+//import java.util.LinkedList;
+//import java.util.*;
 
 public class Main {
 
 	public static void main(String[] args) {
 
+		
 		Point pt = new Point(10, 50);
 //		Point pt = new Point();
 //		pt.setX(10);
@@ -41,6 +55,16 @@ public class Main {
 
 		GraphicText gt = new GraphicText("Hello World");
 		draw(gt);
+
+		// instanceof test
+		System.out.println(circle instanceof Object); // true
+		System.out.println(circle instanceof Shape); // true
+		System.out.println(circle instanceof Circle); // true
+//		System.out.println(circle instanceof Rectangle); // 오류! class는 hierachy 상위와 하위만 instanceof 연산자를 사용할 수 있다. 
+//		System.out.println(circle instanceof String); // 오류!
+		// 하지만 interface는 hierachy와 상관없이 instanceof 연산자 사용 가능
+		System.out.println(circle instanceof Drawable); // true
+		System.out.println(circle instanceof Runnable); // false Runnable은 구현하지 않았음
 
 	}
 

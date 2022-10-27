@@ -1,4 +1,4 @@
-package paint;
+package com.bitacademy.paint.point;
 
 public class ColorPoint extends Point { // 상속에서 생성자!
 	private String color;

@@ -14,13 +14,16 @@ public class GoodsApp {
 		// 상품 입력
 		String line = scanner.nextLine();
 		String[] infos=line.split(" ");		
-		System.out.println(Arrays.toString(infos));
+		
+//		System.out.println(Arrays.toString(infos));
 		String name=infos[0];
 		int price=Integer.parseInt(infos[1]);
-		int sountStock=Integer.parseInt(infos[2]);
+		int countStock=Integer.parseInt(infos[2]);
+	
 
 		// 상품 출력
 		
+				
 		// 자원정리
 		scanner.close();
 	}
