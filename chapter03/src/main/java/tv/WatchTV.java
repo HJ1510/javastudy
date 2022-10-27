@@ -14,16 +14,16 @@ public class WatchTV {
 		tv.volume(false); //100 볼륨 한개씩 조절 0-1=>100 순환되도록 
 		tv.status();
 
-//		tv.channel(0);
-//		tv.status(); // 250
-//
+		tv.channel(0);
+		tv.status(); // 255
+
 		tv.channel(true); //+
 		tv.channel(true); //+
 		tv.channel(true); //+
 		tv.status();
 
-//		tv.power(false); //off
-//		tv.status();
+		tv.power(false); //off
+		tv.status();
 
 	}
 
