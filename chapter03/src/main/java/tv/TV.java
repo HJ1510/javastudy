@@ -14,24 +14,24 @@ public class TV {
 	public void power(boolean on) {
 		power = on;
 	}
-	
+
 	public void channel(int channel) {
 		if (!power) {
 			return;
 		}
-		if (channel <1) {
+		if (channel < 1) {
 			channel = 255;
-		} else if (channel >255) {
+		} else if (channel > 255) {
 			channel = 1;
 		}
-		this.channel=channel;
+		this.channel = channel;
 	}
-	
+
 	public void channel(boolean up) {
 		if (up) {
-			channel(channel+1);
+			channel(channel + 1);
 		} else {
-			channel(channel-1);
+			channel(channel - 1);
 		}
 		// channel(channel + (up? 1: -1)
 	}
@@ -40,16 +40,16 @@ public class TV {
 		if (!power) {
 			return;
 		}
-		if (volume<0) {
-			volume=100;
-		} else if (volume>100) {
-			volume=0;
+		if (volume < 0) {
+			volume = 100;
+		} else if (volume > 100) {
+			volume = 0;
 		}
 		this.volume = volume;
 	}
 
 	public void volume(boolean up) {
-		volume(volume+ (up ? 1:-1));
+		volume(volume + (up ? 1 : -1));
 	}
 
 	public void status() {
