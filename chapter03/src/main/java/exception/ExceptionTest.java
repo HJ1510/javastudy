@@ -27,7 +27,7 @@ public class ExceptionTest {
 			System.out.println("자원 정리");
 		}
 		// 예외가 발생한 이후에 실행되는 코드이기때문에 비추
-		// (예외처리 후에는 코드 작성하지 않는 것이 좋음.. 예외가 발생했지만 실행되기때문에)
+		// (예외처리 후에는 코드 작성하지 않는 것이 좋음. 예외가 발생했지만 실행되기때문에)
 //		System.out.println("some code4");
 	}
 
