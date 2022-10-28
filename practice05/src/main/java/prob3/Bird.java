@@ -14,6 +14,11 @@ public abstract class Bird {
 	public abstract void fly();
 
 	public abstract void sing();
+
+	@Override
+	public String toString() {
+		return "Bird [name=" + name + "]";
+	}
 	
 	
 }
