@@ -5,7 +5,14 @@ public class Goods {
 	private int price;
 	private int countStock;
 	
+	public Goods() {
+	}
 	
+	public Goods(String name, int price, int countStock) {
+		this.name=name;
+		this.price=price;
+		this.countStock=countStock;
+	}
 
 	public String getName() {
 		return name;
