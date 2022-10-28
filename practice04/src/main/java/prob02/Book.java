@@ -45,8 +45,7 @@ public class Book {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-	
-	
+
 	public int getStateCode() {
 		return stateCode;
 	}
@@ -56,13 +55,15 @@ public class Book {
 	}
 
 	public void rent() {
-		stateCode=1;
-		System.out.println(title+"이(가) 대여 됐습니다.");
-		
+		stateCode = 1;
+		System.out.println(title + "이(가) 대여 됐습니다.");
+
 	}
-	
+
 	public void print() {
-		System.out.println("책 제목:"+title+", 작가:"+author+", 대여유무: "+(stateCode==0 ? "재고있음":"대여중"));
+		System.out.println("책 제목:" + title + 
+				", 작가:" + author + 
+				", 대여유무: " + (stateCode == 0 ? "재고있음" : "대여중"));
 	}
 
 }
