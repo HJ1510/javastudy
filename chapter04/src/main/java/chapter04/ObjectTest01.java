@@ -10,8 +10,11 @@ public class ObjectTest01 {
 		
 		System.out.println(p.getClass()); // reflection 위 두줄과 같은의미
 		
-		System.out.println(p.hashCode());
-		System.out.println(p.toString());
+		System.out.println(p.hashCode()); // adress 기반의 해싱값 adress값 아님 reference값 아님
+		System.out.println(p.toString()); // getClass()+"@+hashcode()
+		System.out.println(p); // println이 기본적으로 toString 호출하는 기능 가지고 있음
+		
+		// 객체 비교 동일성 vs. 동질성
 
 	}
 
