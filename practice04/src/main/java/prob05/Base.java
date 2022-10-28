@@ -1,6 +1,6 @@
 package prob05;
 
-public class Base {  // 수정금지
+public class Base {  
 	public void service(String state){
 		if( state.equals( "낮" ) ) {
 			day();
@@ -16,4 +16,4 @@ public class Base {  // 수정금지
 	public void night(){
 		System.out.println("night");
 	}
-} // 수정금지
+} 
