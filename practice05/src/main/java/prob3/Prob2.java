@@ -1,6 +1,6 @@
 package prob3;
- 
-public class Prob2 {  // 오버라이딩
+
+public class Prob2 { // 오버라이딩
 	public static void main(String[] args) {
 		Bird bird01 = new Duck();
 		bird01.setName("꽥꽥이");
