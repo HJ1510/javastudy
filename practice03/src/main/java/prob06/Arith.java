@@ -25,7 +25,8 @@ public abstract class Arith {
 	public void setB(int b) {
 		this.b = b;
 	}
+	
 
-	public abstract int calculate();
+	public abstract int calculate(int a, int b);
 
 }
