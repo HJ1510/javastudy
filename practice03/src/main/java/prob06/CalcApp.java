@@ -29,22 +29,22 @@ public class CalcApp {
 			switch (tokens[1]) {
 			case "+": {
 				Arith add = new Add();
-				System.out.println(add.calculate(lValue, rValue));
+				System.out.println(">> " + add.calculate(lValue, rValue));
 				break;
 			}
 			case "-": {
 				Arith sub = new Sub();
-				System.out.println(sub.calculate(lValue, rValue));
+				System.out.println(">> " + sub.calculate(lValue, rValue));
 				break;
 			}
 			case "*": {
 				Arith mul = new Mul();
-				System.out.println(mul.calculate(lValue, rValue));
+				System.out.println(">> " + mul.calculate(lValue, rValue));
 				break;
 			}
 			case "/": {
 				Arith div = new Div();
-				System.out.println(div.calculate(lValue, rValue));
+				System.out.println(">> " + div.calculate(lValue, rValue));
 				break;
 			}
 			default: {
@@ -56,6 +56,7 @@ public class CalcApp {
 		scanner.close();
 
 	}
+
 }
 
 //	switch( tokens[ 1 ] ) {
