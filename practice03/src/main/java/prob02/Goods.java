@@ -39,6 +39,6 @@ public class Goods {
 	}
 
 	public void showInfo() { // 생성자, setter 상관없음
-		System.out.println(name+"(가격:"+price+"원)이 "+countStock+"개 입고 되었습니다.");
+		System.out.println(name+"(가격: "+price+"원)이 "+countStock+"개 입고 되었습니다.");
 	}
 }
