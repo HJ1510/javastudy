@@ -10,6 +10,6 @@ public abstract class Arith {
 		this.b = b;
 	}
 
-	public abstract int calculate(int a, int b);
+	public abstract int calculate();
 
 }
