@@ -11,7 +11,7 @@ public class Prob04 {
 	
 	public static char[] reverse(String str) {
 		char[] cs= str.toCharArray();
-		for (int i =0, j =str.length(); i<j; i++, j--) {
+		for (int i =0, j =str.length(); i< j; i++, j--) {
 			char cs1=cs[i];
 			cs[i]=cs[j];
 			cs[j]=cs1;			
