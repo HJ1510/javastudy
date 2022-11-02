@@ -14,10 +14,10 @@ public class DateTest {
 
 	private static void printDate01(Date d) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd a hh:mm:ss");
-		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String date = sdf.format(d);
-		String date2 = sdf2.format(d);
 		System.out.println(date);
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String date2 = sdf2.format(d);		
 		System.out.println(date2);
 
 	}
