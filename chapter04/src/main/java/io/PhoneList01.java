@@ -98,7 +98,7 @@ public class PhoneList01 {
 			// 4. 데이터 처리
 			String line = null;
 			while ((line = br.readLine()) != null) {
-				StringTokenizer st = new StringTokenizer(line, "\t, ");
+				StringTokenizer st = new StringTokenizer(line, "\t "); //구분자 여러개 그냥 쭉 씀
 
 				int index = 0;
 				while (st.hasMoreElements()) {
