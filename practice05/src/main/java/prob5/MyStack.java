@@ -4,20 +4,19 @@ public class MyStack {
 	private String[] buffer;
 
 	public MyStack(int size) {
-		this.buffer = new String[size];
-		System.out.println(buffer.length);
+		buffer = new String[size];
 	}
 	
-//	public void push(String string) {
-//
-//	}
-//
-//	public boolean isEmpty() {
-//
-//	}
-//
-//	public String pop() {
-//		return null;
-//	}
+	public void push(String string) {
+
+	}
+
+	public boolean isEmpty() {
+
+	}
+
+	public String pop() {
+		return null;
+	}
 
 }
