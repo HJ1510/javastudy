@@ -1,15 +1,16 @@
 package prob5;
 
-public class MyStack03 {
+public class MyStack03<T> {
 	private int top;
-	private Object[] buffer; //String 외에 다른 종류의 객체도 다 사용 가능하게 수정!!
+	private T[] buffer; //캐스팅으로 타입 지정 안해도 되도록 수정!! 제너릭 클래스
 
+	@SuppressWarnings("unchecked")
 	public MyStack03(int capacity) {
 		top = -1;
-		buffer = new String[capacity];
+		buffer =(T[]) new Object[capacity]; //new T[capacity]; 안됨
 	}
 
-	public void push(Object o) {
+	public void push(T o) {
 		if (top == buffer.length - 1) {
 			resize();
 		}
@@ -17,12 +18,12 @@ public class MyStack03 {
 		buffer[++top] = o;		
 	}
 
-	public Object pop() throws MyStackException {
+	public T pop() throws MyStackException {
 		if (isEmpty()) {
 			throw new MyStackException("stack is empty");
 		}
 
-		Object result = buffer[top];
+		T result = buffer[top];
 		buffer[top--] = null;
 
 		return result;
@@ -32,8 +33,9 @@ public class MyStack03 {
 		return top == -1;
 	}
 
+	@SuppressWarnings("unchecked")
 	private void resize() {
-		Object[] temp = new Object[buffer.length * 2];
+		T[] temp = (T[])new Object[buffer.length * 2];
 		for (int i = 0; i <= top; i++) {
 			temp[i] = buffer[i];
 		}
