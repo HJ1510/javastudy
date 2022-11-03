@@ -1,7 +1,19 @@
+//package prob5;
+//
+//public class MyStackException extends Exception {
+//	public MyStackException() {
+//		super.printStackTrace();
+//	}
+//}
+
 package prob5;
 
 public class MyStackException extends Exception {
-	public MyStackException() {
-		super.printStackTrace();
+
+	private static final long serialVersionUID = 1L;
+
+	public MyStackException(String message) {
+		super(message);
 	}
+
 }
