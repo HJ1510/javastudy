@@ -9,7 +9,7 @@ public class MainApp02 {
 			stack.push("World");
 			stack.push("!!!");
 			stack.push("java");
-			stack.push(12);
+//			stack.push(12);
 
 			while (stack.isEmpty() == false) {
 				// 위험! 잘못된 Type Casting을 할 우려가 있음
