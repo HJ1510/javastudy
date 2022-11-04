@@ -61,7 +61,7 @@ public class Book {
 	}
 
 	public void print() {
-		System.out.println("책 제목:" + title + 
+		System.out.println("["+bookNo+"]책 제목:" + title + 
 				", 작가:" + author + 
 				", 대여유무: " + (stateCode == 0 ? "재고있음" : "대여중"));
 	}
